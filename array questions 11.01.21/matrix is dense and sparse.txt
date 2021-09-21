@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[1000][1000],m,n,i,j,zero=0,othr=0;
+printf("enter array row size :");
+scanf("%d",&m);
+printf("enter array columb size :");
+scanf("%d",&n);
+for(i=0;i<=m-1;i++)
+{
+    for(j=0;j<=n-1;j++)
+{  scanf("%d",&a[i][j]);
+   if(a[i][j]==0)
+   zero = zero + 1;
+   else
+   othr = othr + 1;
+}
+}
+if(zero>othr)
+printf("matrix is sparse");
+else if(othr>zero)
+printf("matrix is dense");
+else
+printf("matrix is not sparse and dense");
+return 0;
+}
+   

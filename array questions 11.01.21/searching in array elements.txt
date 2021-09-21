@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[1000],n,ele,i,f=0;
+    printf("enter size upto 1000");
+    scanf("%d",&n);
+    
+    printf("enter numbers");
+    for(i=0;i<=n-1;i++)
+    {scanf("%d",&a[i]);}
+    printf("enter finding no");
+    {scanf("%d",&ele);}
+    for(i=0;i<=n-1;i++)
+    {if(a[i]==ele)
+    printf("your no %d is at this position %d ",ele,i+1);
+    f=1;
+    if(f==0)
+    printf("no elements are there no not found ");
+}
+
+    
+    
+    
+    
+    
+    return 0;
+}

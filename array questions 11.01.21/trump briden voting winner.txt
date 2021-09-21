@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int trump[10],briden[10],i,t_vote=0,b_vote=0;
+    printf("enter state wise voting of 10 states ");
+    for(i=0;i<=9;i++)
+        scanf("%d %d",&trump[i],&briden[i]);
+    for(i=0;i<=9;i++)
+    {
+        if(trump[i]>briden[i])
+        {
+        printf("State-%d Trump Winner\n",i+1);
+        t_vote = t_vote + 1;
+        }
+        else
+        {
+        printf("state-%d Briden Winner\n",i+1);
+        b_vote = b_vote + 1;
+        }
+    }
+    if(t_vote>b_vote)
+    printf("overall winner is trump with   votes ");
+    else
+    printf("overall winner is briden with   votes" );
+
+    return 0;
+}

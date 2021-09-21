@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter no of students");
+    scanf("%d",&n);
+    int a[n],i,stu=0;
+    printf("enter its percentages");
+    for(i=0;i<=n-1;i++)
+    {   
+        scanf("%d",&a[i]);
+    
+    }
+    for(i=0;i<=n-1;i++)
+    {
+        if(a[i]>60)
+        stu = stu + 1;
+    }
+    printf("no of students above 60%% marks %d",stu);
+
+    return 0;
+}

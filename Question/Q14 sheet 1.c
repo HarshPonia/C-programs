@@ -1,0 +1,6 @@
+int main()
+{
+    int var= 010;
+    printf("%d", var);
+    return 0;
+}

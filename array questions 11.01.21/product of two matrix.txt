@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+
+{
+int m,n,i,j,p,q,sum=0;
+printf("enter the row size ");
+scanf("%d",&n);
+printf("enter coloumb size");
+scanf("%d",&m);
+printf("enter 2 matrix the row size ");
+scanf("%d",&p);
+printf("enter 2 matrix coloumb size");
+scanf("%d",&q);
+int a[n][m],b[p][q];
+if(m==p || n==q)
+{
+    int c[m][n];  
+printf("enter 1 matrix");
+for(i=0;i<=n-1;i++)
+{
+        for(j=0;j<=m-1;j++)
+        scanf("%d",&a[i][j]);
+}
+printf("enter 2 matrix");
+for(i=0;i<=n-1;i++)
+{
+        for(j=0;j<=m-1;j++)
+        scanf("%d",&b[i][j]);
+}
+printf("matrix after sum\n");
+ for(i=0;i<=n-1;i++)
+{
+        for(j=0;j<=m-1;j++)
+        { c[i][j] = a[i][j] * b[i][j];
+          printf("%d ",c[i][j]);
+        }
+        printf("\n");
+} 
+}
+    return 0;
+}

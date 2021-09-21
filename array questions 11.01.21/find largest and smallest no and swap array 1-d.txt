@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[1000],n,i,max=0,min=a[0],t,posmax,posmin;
+    printf("enter size of array");
+    scanf("%d",&n);
+    printf("enter elements");
+    for(i=0;i<=n-1;i++)
+    {
+        scanf("%d",&a[i]);
+
+    }
+    for(i=0;i<=n-1;i++)
+    {
+        if(a[i]>max)
+        {
+           max = a[i];
+           posmax=i;
+        }
+
+
+    }
+    printf("%d position = largest element = %d\n",posmax+1,max);
+    for(i=0;i<=n-1;i++)
+    {
+        if(a[i] < min)
+        {
+          min = a[i];
+          posmin=i;
+        }
+
+    }
+    printf("%d position = smallest elements = %d\n",posmin+1,min);
+    {
+
+
+    t=a[posmax];
+    a[posmax]=a[posmin];
+    a[posmin]=t;
+    printf("AFTER SWAPING ARRAY IS:-");
+    for(i=0;i<=n-1;i++)
+    printf("%d ",a[i]);
+    }
+
+
+
+
+
+
+
+
+    return 0;
+}
